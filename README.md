@@ -29,6 +29,6 @@
 
 # Vídeo demonstrativo da aplicação
 
-https://github.com/werbertviana/batuta_integra/assets/84457740/483a27be-4d48-4937-b18c-a61c2882580f
+https://github.com/werbertviana/batuta-integra/blob/main/Video.mp4
 
 
