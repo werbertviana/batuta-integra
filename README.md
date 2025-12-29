@@ -1,97 +1,34 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Batuta
+> Status: Em desenvolvimento
 
-# Getting Started
+* Para tornar o ensino de teoria musical mais acessível e envolvente, este projeto visa desenvolver um aplicativo móvel chamado BATUTA, baseado em gamificação. A gamificação envolve a incorporação de elementos de jogos para resolver problemas práticos e engajar o público.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+* Na aplicação BATUTA, os conteúdos serão abordados de maneira envolvente e interativa, utilizando o formato lúdico dos jogos "quiz" para testar e consolidar o conhecimento. 
 
-## Step 1: Start Metro
+* O diferencial do BATUTA está na abordagem lúdica e inovadora da gamificação, que motiva e estimula o aprendizado, proporcionando uma experiência educacional envolvente.
+ 
+  <img src="https://github.com/werbertviana/apibatuta/blob/main/src/assets/BG2.jpg"> </image>
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+# Batuta - Frontend
+* Para a criação do front-end do BATUTA foi utilizado o React-Native, uma biblioteca escrita em JavaScript e criada para construir a interface do usuário em aplicativos móveis.
+  
+* Criado pelo Facebook e baseado no React, que cria interfaces voltadas para aplicações web, o React-Native é a solução para criar aplicativos nativos tanto para Android quanto para iOS.
+  
+* O diferencial do React-Native é escrever um único código que cria binários executáveis de aplicativos móveis tanto para o Android quanto para o iOS. Um exemplo disso é que o mesmo código de um botão vai ter a aparência de um botão Android, quando executado em um dispositivo Android e vai ter uma aparência de botão iOS quando executado em um dispositivo baseado no iOS. 
+ 
+# Prototipagem
+* As decisões tomadas durante a prototipagem tiveram como referência os princípios e recursos de gamificação.
+  
+<img src="https://github.com/werbertviana/apibatuta/blob/main/src/assets/Proto.jpg"> </image>
 
-```sh
-# Using npm
-npm start
+# Tecnologias utilizadas no projeto
+1. React Native
+2. React Redux
+   
+# Documentações
+* Google Drive: https://drive.google.com/drive/folders/16pzUi5dBZzBNEeTaJ1ZWaqkdO2dMC76z?usp=sharing
 
-# OR using Yarn
-yarn start
-```
+https://github.com/werbertviana/batuta_integra/assets/84457740/483a27be-4d48-4937-b18c-a61c2882580f
 
-## Step 2: Build and run your app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
