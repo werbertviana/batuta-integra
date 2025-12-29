@@ -7,7 +7,7 @@
 
 * O diferencial do BATUTA está na abordagem lúdica e inovadora da gamificação, que motiva e estimula o aprendizado, proporcionando uma experiência educacional envolvente.
  
-  <img src="https://github.com/werbertviana/Batuta-Integra/tree/main/src/assets/images/BG/BG1.jpg"> </image>
+  <img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG1.jpg"> </image>
 
 
 # Batuta - Frontend
