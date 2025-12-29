@@ -3,7 +3,7 @@
 
 * Para tornar o ensino de teoria musical mais acessível e envolvente, este projeto visa desenvolver um aplicativo móvel chamado BATUTA, baseado em gamificação. A gamificação envolve a incorporação de elementos de jogos para resolver problemas práticos e engajar o público.
 
-* Na aplicação BATUTA, os conteúdos serão abordados de maneira envolvente e interativa, utilizando o formato lúdico dos jogos "quiz" para testar e consolidar o conhecimento. 
+* Na aplicação BATUTA, os conteúdos são abordados de maneira envolvente e interativa, utilizando o formato lúdico dos jogos "quiz" para testar e consolidar o conhecimento. 
 
 * O diferencial do BATUTA está na abordagem lúdica e inovadora da gamificação, que motiva e estimula o aprendizado, proporcionando uma experiência educacional envolvente.
  
@@ -20,11 +20,12 @@
 # Prototipagem
 * As decisões tomadas durante a prototipagem tiveram como referência os princípios e recursos de gamificação.
   
-<img src="https://github.com/werbertviana/apibatuta/blob/main/src/assets/Proto.jpg"> </image>
+<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG2.jpg"> </image>
 
 # Tecnologias utilizadas no projeto
 1. React Native
-2. React Redux
+2. JavaScript
+3. CSS
    
 # Documentações
 * Google Drive: https://drive.google.com/drive/folders/16pzUi5dBZzBNEeTaJ1ZWaqkdO2dMC76z?usp=sharing
