@@ -1,0 +1,28 @@
+{
+    "slides": [
+        {
+            "key": "1",
+            "image": "slide01_02.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "2",
+            "image": "slide03_04.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "3",
+            "image": "slide05_06.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "4",
+            "image": "slide07_08.png",
+            "music": "",
+            "video": ""
+        }
+    ]
+}

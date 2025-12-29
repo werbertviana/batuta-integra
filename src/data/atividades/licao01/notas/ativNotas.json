@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "Quais são as 7 notas musicais?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "DÓ-RI-MI-FÁ-SOL-LÁ-SI",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "DÓ-RÉ-MI-FÁ-SOL-LÁ-SI",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "DÓ-RÉ-MI-FÉ-SOL-LÁ-SI",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "DÓ-RÉ-MI-FÁ-SOL-LÓ-SI",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        },
+        {
+            "id": "2",
+            "questao": "A nota Ré pode ser representada por qual letra?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "Qual figura representa a nota Sol na pauta?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q05.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q06.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q07.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q08.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        }                            
+    ]
+}

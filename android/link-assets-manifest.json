@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/DINRoundPro-Medi.ttf",
+      "sha1": "46cb14257fac1c7e2234e57095e948955a38a246"
+    },
+    {
+      "path": "src/assets/fonts/GothamCondensed-Bold.ttf",
+      "sha1": "f1970ff6b4b9492eade5901e0bed5b4f4625debc"
+    },
+    {
+      "path": "src/assets/fonts/GothamCondensed-Book.ttf",
+      "sha1": "c1ac3138ad32f135ff5ac1e2821b6d0baebd6934"
+    },
+    {
+      "path": "src/assets/fonts/GothamCondensed-Light.ttf",
+      "sha1": "50520bc13d06fe0180a77fad4a565fc7a2e7a399"
+    },
+    {
+      "path": "src/assets/fonts/GothamCondensed-Medium.ttf",
+      "sha1": "1975d04099767e53a8da49d337b25a497ae4c561"
+    }
+  ]
+}

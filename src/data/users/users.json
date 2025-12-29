@@ -1,0 +1,40 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "João Silva",
+        "email": "joao.silva@example.com",
+        "gameStats": {
+          "lifePoints": 2,
+          "batutaPoints": 0,
+          "xpPoints": 0,
+          "elo": "ferro",
+          "nivel": "1"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Maria Oliveira",
+        "email": "maria.oliveira@example.com",
+        "gameStats": {
+          "lifePoints": 5,
+          "batutaPoints": 0,
+          "xpPoints": 0,
+          "elo": "ferro",
+           "nivel": "2"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Carlos Souza",
+        "email": "carlos.souza@example.com",
+        "gameStats": {
+          "lifePoints": 2,
+          "batutaPoints": 0,
+          "xpPoints": 0,
+          "elo": "ferro",
+           "nivel": "8"
+        }
+      }
+    ]
+  }

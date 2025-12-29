@@ -1,0 +1,16 @@
+{
+    "slides": [
+        {
+            "key": "1",
+            "image": "slide01_02.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "2",
+            "image": "slide03.png",
+            "music": "",
+            "video": ""
+        }
+    ]
+}

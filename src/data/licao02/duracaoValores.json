@@ -1,0 +1,26 @@
+{
+    "slides": [
+        {
+            "key": "1",
+            "image": "slide01_03.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "2",
+            "image": "slide04_11.png",
+            "music": [
+                {
+                    "01": "semibreve",
+                    "02": "minima",
+                    "03": "seminima",
+                    "04": "colcheia",
+                    "05": "semicolcheia",
+                    "06": "fusa",
+                    "07": "semifusa"
+                }
+            ],
+            "video": ""
+        }
+    ]
+}

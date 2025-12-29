@@ -1,0 +1,21 @@
+{
+    "slides": [
+        {
+            "key": "1",
+            "image": "slide01_03.png",
+            "music": "",
+            "video": ""
+        },
+        {
+            "key": "2",
+            "image": "slide04_08.png",
+            "music": [
+                {
+                    "01": "pretinha",
+                    "02": "metronomo"
+                }
+            ],
+            "video": ""
+        }
+    ]
+}

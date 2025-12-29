@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "Quais são os tipos de compasso?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "A",
+            "nivel": "medio",
+            "elo": "ferro",
+            "tipo": "imagem"
+        },
+        {
+            "id": "2",
+            "questao": "Qual opção representa uma Barra, um Travessão Duplo e uma Barra Final, respectivamente?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q05.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q06.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q07.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q08.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "O que é um compasso musical?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "É A DIVISÃO DAS FIGURAS DE NOTAS NO TEMPO",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "É A DIVISÃO DA MÚSICA EM SÉRIES REGULARES DE TEMPOS",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "É A DIVISÃO IRREGULAR DO TEMPO NA MÚSICA",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "É O MOVIMENTO ORDENADO DOS SONS NO TEMPO",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "medio",
+            "elo": "ferro",
+            "tipo": "texto"
+        }                            
+    ]
+}

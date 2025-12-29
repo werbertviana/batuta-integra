@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "Quais são os elementos fundamentais da música?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "A",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+        {
+            "id": "2",
+            "questao": "Qual a definição de melodia?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "COMBINAÇÃO DE SONS SIMULTÂNEOS",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "REPETIÇÃO CONTÍNUA DE UM MESMO SOM",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "COMBINAÇÃO DE SONS SUCESSIVOS",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "MOVIMENTO DESORDENADO DOS SONS",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        },
+         {
+            "id": "3",
+            "questao": "Qual a definição de harmonia?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "COMBINAÇÃO DE SONS SUCESSIVOS",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "COMBINAÇÃO DE SONS SIMULTÂNEOS",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "MOVIMENTO ORDENADO DOS SONS",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "REPETIÇÃO CONTÍNUA DE UM MESMO SOM",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        }                            
+    ]
+}

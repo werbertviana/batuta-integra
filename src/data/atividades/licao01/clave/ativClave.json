@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "Qual figura representa a Clave de Sol?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+        {
+            "id": "2",
+            "questao": "Qual figura representa a Clave de Dó?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q04.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q03.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q01.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q02.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "D",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "Qual figura representa a Clave de Fá?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q03.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q04.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q02.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q01.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "D",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        }                            
+    ]
+}

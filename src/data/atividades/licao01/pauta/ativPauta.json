@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "O que é uma pauta musical?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "UM SINAL QUE DÁ NOME AS NOTAS",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "UM CONJUNTO DE 5 LINHAS E 4 ESPAÇOS",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "UM SINAL QUE INDICA DURAÇÃO ",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "UM CONJUNTO DE 4 LINHAS E 5 ESPAÇOS",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        },
+        {
+            "id": "2",
+            "questao": "Quais notas estão nas linhas suplementares superiores?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "A",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "Quais notas estão nos espaços suplementares inferiores?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q04.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q01.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q02.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q03.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        }                            
+    ]
+}

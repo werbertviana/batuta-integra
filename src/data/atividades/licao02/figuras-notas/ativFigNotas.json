@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "O que são figuras de notas?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "SÃO SINAIS QUE INDICAM PAUSAS",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "SÃO SINAIS QUE INDICAM O NOME DOS SONS",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "SÃO SINAIS QUE INDICAM INTENSIDADE",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "SÃO SINAIS QUE INDICAM A DURAÇÃO DOS SONS",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "D",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        },
+        {
+            "id": "2",
+            "questao": "Qual figura de nota representa a Semibreve?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "Qual figura de nota representa a Colcheia?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q05.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q06.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q07.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q03.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "D",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        }                            
+    ]
+}

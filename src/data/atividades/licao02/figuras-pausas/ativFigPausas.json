@@ -1,0 +1,94 @@
+{
+    "atividades": [
+        {
+            "id": "1",
+            "questao": "O que são figuras de pausas?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "texto": "SÃO SINAIS QUE INDICAM A DURAÇÃO DOS SONS",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "texto": "SÃO SINAIS QUE INDICAM O NOME DOS SONS",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "texto": "SÃO SINAIS QUE INDICAM A DURAÇÃO DO SILÊNCIO",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "texto": "SÃO SINAIS QUE INDICAM INTENSIDADE",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "C",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "texto"
+        },
+        {
+            "id": "2",
+            "questao": "Qual figura representa a Pausa da Semínima?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q01.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q02.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q03.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q04.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        },
+         {
+            "id": "3",
+            "questao": "Qual figura representa a Pausa da Mínima?",
+            "opcoes": [
+                {
+                    "id": "1",
+                    "imagem": "Q05.png",
+                    "alternativa": "A"
+                },
+                {
+                    "id": "2",
+                    "imagem": "Q03.png",
+                    "alternativa": "B"
+                },
+                {
+                    "id": "3",
+                    "imagem": "Q02.png",
+                    "alternativa": "C"
+                },
+                {
+                    "id": "4",
+                    "imagem": "Q01.png",
+                    "alternativa": "D"
+                }
+            ],
+            "alternativa_correta": "B",
+            "nivel": "facil",
+            "elo": "ferro",
+            "tipo": "figura"
+        }                            
+    ]
+}
