@@ -61,3 +61,26 @@ npm install
 ou
 yarn install
 Executar o projeto
+npx react-native run-android
+ou
+npx react-native run-ios
+
+# 📚 Contexto do projeto
+O Batuta foi desenvolvido como parte de um projeto acadêmico voltado ao ensino musical, com o objetivo de explorar a aplicação de gamificação no aprendizado de teoria musical através de dispositivos móveis.
+
+O projeto também serve como portfólio de desenvolvimento mobile, demonstrando habilidades em:
+* Desenvolvimento mobile com React Native.
+* Criação de interfaces interativas.
+* Design de experiência do usuário.
+* Organização de arquitetura de projeto.
+  
+# 👨‍💻 Autor
+Werbert Viana
+
+Desenvolvedor focado em aplicações mobile utilizando React Native, com interesse em tecnologia aplicada à educação e experiências digitais interativas.
+
+GitHub:
+https://github.com/werbertviana
+
+# ⭐ Contribuição
+Este projeto está em desenvolvimento e novas funcionalidades poderão ser adicionadas futuramente.
