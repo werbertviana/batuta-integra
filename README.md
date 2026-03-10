@@ -21,7 +21,21 @@ O aplicativo Batuta possui funcionalidades voltadas ao aprendizado musical atrav
 * Interface visual voltada para aprendizado.
 * Experiência gamificada para aumentar engajamento.
 * Navegação entre telas de atividades musicais.
+  
+# 🎨 Design e UI/UX
+Todo o design da aplicação foi desenvolvido pelo autor do projeto, incluindo:
+* Identidade visual.
+* Símbolos musicais utilizados nas atividades.
+* Elementos gráficos.
+* Layout das telas.
+* Experiência de navegação.
+  
+O objetivo foi criar uma interface didática e intuitiva, facilitando a compreensão dos conteúdos musicais e tornando o aprendizado mais envolvente.
 
+A prototipagem do aplicativo foi baseada em princípios de gamificação aplicada à educação, priorizando clareza visual e interação simples para o usuário.
+
+<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG2.jpg"> </image>
+  
 # Batuta - Frontend
 * Para a criação do front-end do BATUTA foi utilizado o React-Native, uma biblioteca escrita em JavaScript e criada para construir a interface do usuário em aplicativos móveis.
   
