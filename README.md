@@ -41,12 +41,12 @@ A prototipagem do aplicativo foi baseada em princípios de gamificação aplicad
  
 # 🛠 Tecnologias utilizadas
 Este projeto utiliza as seguintes tecnologias:
-* **React Native.**
-* **JavaScript.**
-* **React Navigation.**
-* **Styled Components.**
-* **React Native Reanimated.**
-* **React Native Gesture Handler.**
+* **React Native**
+* **JavaScript**
+* **React Navigation**
+* **Styled Components**
+* **React Native Reanimated**
+* **React Native Gesture Handler**
   
 # 📂 Estrutura do projeto
 A aplicação foi organizada de forma modular para facilitar manutenção e escalabilidade.
