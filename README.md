@@ -5,7 +5,7 @@
 * Batuta é um aplicativo mobile criado para tornar o aprendizado de teoria musical mais acessível, interativo e motivador, utilizando conceitos de gamificação para engajar estudantes de música.
 * A aplicação utiliza exercícios em formato de quiz interativo, incentivando o usuário a aprender conceitos musicais de forma progressiva e divertida, semelhante a plataformas modernas de aprendizado gamificado.
 * O objetivo do projeto é transformar o estudo da teoria musical — que muitas vezes é visto como algo complexo ou pouco atrativo — em uma experiência dinâmica, visual e estimulante.
-<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG1.jpg"> </image>
+<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG1.jpg"> 
 
 # 🎮 Demonstração
 🎥 Vídeo demonstrativo da aplicação:
@@ -33,7 +33,7 @@ O objetivo foi criar uma interface didática e intuitiva, facilitando a compreen
 
 A prototipagem do aplicativo foi baseada em princípios de gamificação aplicada à educação, priorizando clareza visual e interação simples para o usuário.
 
-<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG2.jpg"> </image>
+<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG2.jpg"> 
   
 # 📱 Frontend Mobile
 * O frontend do Batuta foi desenvolvido utilizando React Native, permitindo a criação de aplicações móveis nativas para Android e iOS a partir de uma única base de código.
@@ -50,7 +50,7 @@ Este projeto utiliza as seguintes tecnologias:
   
 # 📂 Estrutura do projeto
 A aplicação foi organizada de forma modular para facilitar manutenção e escalabilidade.
-<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG3.jpg"> </image>
+<img src="https://github.com/werbertviana/Batuta-Integra/blob/main/src/assets/images/BG/BG3.jpg"> 
 
 # 🚀 Como executar o projeto
 Pré-requisitos:
