@@ -1,4 +1,4 @@
-# Batuta 🎵
+# Batuta Frontend 🎵
 ![React Native](https://img.shields.io/badge/React%20Native-Mobile-blue)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 >  Aplicativo mobile gamificado para ensino de teoria musical desenvolvido com **React Native**.
