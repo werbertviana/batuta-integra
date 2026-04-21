@@ -82,9 +82,6 @@ export default function ResumoAtividadeModal({
 
   const { totalQuestoes, acertos, erros } = resumoDados;
 
-  // Emoji dinâmico no título
-  const tituloEmoji = aprovado ? '🎉' : '📊';
-
   const handleRecomecarPress = () => {
     if (onRecomecar) onRecomecar();
   };
@@ -103,13 +100,13 @@ export default function ResumoAtividadeModal({
     >
       <Overlay>
         <Container>
-          <Title>RESUMO DA ATIVIDADE {tituloEmoji}</Title>
+          <Title> RESUMO DA ATIVIDADE 📋 </Title>
 
           <MessageContainer>
             {aprovado ? (
               <>
                 <MessageText variant="success">
-                  Parabéns! Você mandou muito bem! 🎵
+                  Parabéns! Você mandou muito bem! 🎉
                 </MessageText>
                 <MessageSubText>
                   Com {formatPercent(percentualAcerto)} de aproveitamento, você está
@@ -119,7 +116,7 @@ export default function ResumoAtividadeModal({
             ) : (
               <>
                 <MessageText variant="fail">
-                  Boa tentativa! Não desanime. 🎶
+                  Boa tentativa! Não desanime. 🚀
                 </MessageText>
                 <MessageSubText>
                   Para avançar, você precisa de pelo menos 50% de acertos.

@@ -29,7 +29,7 @@ export const MessageContainer = styled.View`
 
 export const MessageText = styled.Text`
   font-family: 'GothamCondensed-Medium';
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   color: ${({ variant }) => (variant === 'success' ? '#27ae60' : '#e74c3c')};
   margin-bottom: 6px;
