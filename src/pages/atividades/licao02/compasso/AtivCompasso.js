@@ -337,6 +337,24 @@ function AtivCompasso() {
     }
   };
 
+  const handleLifeModalExit = () => {
+    setLifeModalVisible(false);
+
+    const resumoParcial = calcularResumo();
+
+    navigation.navigate('Tab', {
+      screen: 'Home',
+      params: {
+        resultadoAtividade: {
+          ...resumoParcial,
+          aprovado: false,
+          xpGanho: 0,
+          bonusVida: false,
+        },
+      },
+    });
+  };
+
   const handleCloseActivity = () => {
     const resumoParcial = calcularResumo();
 
@@ -400,6 +418,7 @@ function AtivCompasso() {
       <LifeLostModal
         visible={lifeModalVisible}
         onConfirm={handleLifeModalConfirm}
+        onExit={handleLifeModalExit}
       />
     </AtivContainer>
   );

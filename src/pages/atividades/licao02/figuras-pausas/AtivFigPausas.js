@@ -106,11 +106,12 @@ function AtivFigPausas() {
     let vidasRestantes = 2;
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (typeof v === 'number') vidasRestantes = v;
+      if (typeof v === 'number') {
+        vidasRestantes = v;
+      }
     }
 
     const acertouTudo = acertos === totalQuestoes;
-
     const bonusVida =
       aprovado &&
       acertouTudo &&
@@ -155,7 +156,9 @@ function AtivFigPausas() {
 
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (typeof v === 'number') vidasAntes = v;
+      if (typeof v === 'number') {
+        vidasAntes = v;
+      }
     }
 
     if (headerRef.current?.loseLife) {
@@ -201,10 +204,11 @@ function AtivFigPausas() {
   const handleCloseFeedback = () => {
     setFeedbackVisible(false);
 
-    const next = currentIndex + 1;
+    const proximaQuestaoIndex = currentIndex + 1;
+    const temProximaQuestao = proximaQuestaoIndex < allAtividades.length;
 
-    if (next < allAtividades.length) {
-      setCurrentIndex(next);
+    if (temProximaQuestao) {
+      setCurrentIndex((prev) => prev + 1);
       setRespostaSelecionada(null);
     } else {
       mostrarResumoFinal();
@@ -216,10 +220,11 @@ function AtivFigPausas() {
     const gameOver = aplicarPerdaDeVida();
     if (gameOver) return;
 
-    const next = currentIndex + 1;
+    const proximaQuestaoIndex = currentIndex + 1;
+    const temProximaQuestao = proximaQuestaoIndex < allAtividades.length;
 
-    if (next < allAtividades.length) {
-      setCurrentIndex(next);
+    if (temProximaQuestao) {
+      setCurrentIndex((prev) => prev + 1);
       setRespostaSelecionada(null);
     } else {
       mostrarResumoFinal();
@@ -311,7 +316,26 @@ function AtivFigPausas() {
     setRespostaSelecionada(null);
     setCurrentIndex(0);
 
-    if (headerRef.current?.resetLives) headerRef.current.resetLives();
+    if (headerRef.current?.resetLives) {
+      headerRef.current.resetLives();
+    }
+  };
+
+  const handleLifeModalExit = () => {
+    setLifeModalVisible(false);
+
+    const resumoParcial = calcularResumo();
+    const resultado = {
+      ...resumoParcial,
+      aprovado: false,
+      xpGanho: 0,
+      bonusVida: false,
+    };
+
+    navigation.navigate('Tab', {
+      screen: 'Home',
+      params: { resultadoAtividade: resultado },
+    });
   };
 
   const handleCloseActivity = () => {
@@ -374,6 +398,7 @@ function AtivFigPausas() {
       <LifeLostModal
         visible={lifeModalVisible}
         onConfirm={handleLifeModalConfirm}
+        onExit={handleLifeModalExit}
       />
     </AtivContainer>
   );

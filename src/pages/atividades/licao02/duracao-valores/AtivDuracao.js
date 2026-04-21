@@ -1,4 +1,3 @@
-// src/screens/atividades/licao02/duracao-valores/AtivDuracao.js
 import React, { useState, useRef } from 'react';
 import { FlatList, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -116,7 +115,9 @@ function AtivDuracao() {
     let vidasRestantes = 2;
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (typeof v === 'number') vidasRestantes = v;
+      if (typeof v === 'number') {
+        vidasRestantes = v;
+      }
     }
 
     const acertouTudo = acertos === totalQuestoes;
@@ -167,7 +168,9 @@ function AtivDuracao() {
 
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (typeof v === 'number') vidasAntes = v;
+      if (typeof v === 'number') {
+        vidasAntes = v;
+      }
     }
 
     if (headerRef.current?.loseLife) {
@@ -331,6 +334,26 @@ function AtivDuracao() {
     }
   };
 
+  const handleLifeModalExit = () => {
+    setLifeModalVisible(false);
+
+    const resumoParcial = calcularResumo();
+
+    const resultado = {
+      ...resumoParcial,
+      aprovado: false,
+      xpGanho: 0,
+      bonusVida: false,
+    };
+
+    navigation.navigate('Tab', {
+      screen: 'Home',
+      params: {
+        resultadoAtividade: resultado,
+      },
+    });
+  };
+
   const handleCloseActivity = () => {
     const resumoParcial = calcularResumo();
 
@@ -394,6 +417,7 @@ function AtivDuracao() {
       <LifeLostModal
         visible={lifeModalVisible}
         onConfirm={handleLifeModalConfirm}
+        onExit={handleLifeModalExit}
       />
     </AtivContainer>
   );

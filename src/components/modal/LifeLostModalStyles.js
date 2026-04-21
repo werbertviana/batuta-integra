@@ -25,7 +25,7 @@ export const Title = styled.Text`
 
 export const Message = styled.Text`
   font-family: 'GothamCondensed-Medium';
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   color: #555555;
 `;
@@ -43,9 +43,55 @@ export const Button = styled.TouchableOpacity`
   border-color: #236a79;
 `;
 
-export const ButtonText = styled.Text`
+export const Divider = styled.View`
+  height: 2px;
+  background-color: #e0e0e0;
+  margin-top: 16px;
+  margin-bottom: 12px;
+`;
+
+export const ActionButton = styled.TouchableOpacity`
+  flex: 1;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  border-radius: 12px;
+  border-bottom-width: 4px;
+  border-left-width: 0.005px;
+  border-right-width: 0.005px;
+  border-color: #236a79;
+  background-color: #3cb1c7;
+  padding: 4px;
+`;
+
+export const ActionButton2 = styled.TouchableOpacity`
+  flex: 1;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border-bottom-width: 4px;
+  border-color: #D2D3D5;
+  background-color: #FFFFFF;
+  border-width: 2px;
+  border-bottom-width: 4px;
+`;
+
+export const ActionButtonText = styled.Text`
   font-family: 'GothamCondensed-Medium';
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
-  letter-spacing: 1px;
+`;
+
+export const ActionButtonText2 = styled.Text`
+  font-family: 'GothamCondensed-Medium';
+  font-size: 20px;
+  color: black;
+`;
+
+export const ButtonsRow = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4px;
 `;

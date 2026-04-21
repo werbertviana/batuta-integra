@@ -7,14 +7,17 @@ import {
   Container,
   Title,
   Message,
-  Button,
-  ButtonText,
+  Divider,
+  ActionButton,
+  ActionButton2,
+  ActionButtonText,
+  ActionButtonText2,
+  ButtonsRow,
 } from './LifeLostModalStyles';
 
-// Ajuste o caminho conforme sua estrutura
 const failSound = require('../../assets/sounds/feedback/fail.mp3');
 
-export default function LifeLostModal({ visible, onConfirm }) {
+export default function LifeLostModal({ visible, onConfirm, onExit }) {
   useEffect(() => {
     Sound.setCategory('Playback');
   }, []);
@@ -36,7 +39,6 @@ export default function LifeLostModal({ visible, onConfirm }) {
       });
     });
 
-    // cleanup se o modal fechar antes do fim
     return () => {
       try {
         sound.stop(() => sound.release());
@@ -49,21 +51,30 @@ export default function LifeLostModal({ visible, onConfirm }) {
       visible={visible}
       transparent
       animationType="fade"
-      onRequestClose={onConfirm}
+      onRequestClose={onExit || onConfirm}
     >
       <Overlay>
         <Container>
-          {/* --- TÍTULO COM EMOJI DE CORAÇÃO QUEBRADO 💔 --- */}
-          <Title>Você ficou sem vidas! 💔</Title>
+          <Title>Você ficou sem vidas! ❤️‍🩹</Title>
 
-          <Message>
-            Você atingiu o limite de erros nesta atividade.{'\n\n'}
-            Vamos recomeçar do início com mais 2 chances para você tentar novamente. 🎵
+          <Message style={{ fontWeight: 'GothamCondensed-Bold'}}>
+            O limite de erros desta atividade foi atingido.{'\n\n'}
+            Deseja tentar novamente com {'\n'} mais 2 chances? 🔄
           </Message>
 
-          <Button onPress={onConfirm}>
-            <ButtonText>RECOMEÇAR ATIVIDADE</ButtonText>
-          </Button>
+          <Divider />
+
+          <ButtonsRow>
+
+            <ActionButton2 onPress={onExit}>
+              <ActionButtonText2>SAIR</ActionButtonText2>
+            </ActionButton2>
+
+            <ActionButton onPress={onConfirm}>
+              <ActionButtonText>TENTAR NOVAMENTE</ActionButtonText>
+            </ActionButton>
+            
+          </ButtonsRow>
         </Container>
       </Overlay>
     </Modal>

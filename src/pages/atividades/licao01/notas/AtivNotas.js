@@ -72,15 +72,24 @@ function AtivNotas() {
 
   const getImages = (imagem) => {
     switch (imagem) {
-      case 'Q01.png': return <ImageAlternativa resizeMode="contain" source={Q01} />;
-      case 'Q02.png': return <ImageAlternativa resizeMode="contain" source={Q02} />;
-      case 'Q03.png': return <ImageAlternativa resizeMode="contain" source={Q03} />;
-      case 'Q04.png': return <ImageAlternativa resizeMode="contain" source={Q04} />;
-      case 'Q05.png': return <ImageAlternativa resizeMode="contain" source={Q05} />;
-      case 'Q06.png': return <ImageAlternativa resizeMode="contain" source={Q06} />;
-      case 'Q07.png': return <ImageAlternativa resizeMode="contain" source={Q07} />;
-      case 'Q08.png': return <ImageAlternativa resizeMode="contain" source={Q08} />;
-      default: return null;
+      case 'Q01.png':
+        return <ImageAlternativa resizeMode="contain" source={Q01} />;
+      case 'Q02.png':
+        return <ImageAlternativa resizeMode="contain" source={Q02} />;
+      case 'Q03.png':
+        return <ImageAlternativa resizeMode="contain" source={Q03} />;
+      case 'Q04.png':
+        return <ImageAlternativa resizeMode="contain" source={Q04} />;
+      case 'Q05.png':
+        return <ImageAlternativa resizeMode="contain" source={Q05} />;
+      case 'Q06.png':
+        return <ImageAlternativa resizeMode="contain" source={Q06} />;
+      case 'Q07.png':
+        return <ImageAlternativa resizeMode="contain" source={Q07} />;
+      case 'Q08.png':
+        return <ImageAlternativa resizeMode="contain" source={Q08} />;
+      default:
+        return null;
     }
   };
 
@@ -99,7 +108,6 @@ function AtivNotas() {
     const totalQuestoes = allAtividades.length;
     const acertos = acertosRef.current;
     const erros = errosRef.current;
-
     const percentualAcerto = (acertos / totalQuestoes) * 100;
     const aprovado = percentualAcerto >= 50;
     const xpGanho = xpRef.current;
@@ -107,11 +115,12 @@ function AtivNotas() {
     let vidasRestantes = 2;
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (!isNaN(v)) vidasRestantes = v;
+      if (typeof v === 'number') {
+        vidasRestantes = v;
+      }
     }
 
     const acertouTudo = acertos === totalQuestoes;
-
     const podeGanharBonus =
       aprovado &&
       acertouTudo &&
@@ -147,16 +156,19 @@ function AtivNotas() {
 
     navigation.navigate('Tab', {
       screen: 'Home',
-      params: { resultadoAtividade: resumoDados },
+      params: {
+        resultadoAtividade: resumoDados,
+      },
     });
   };
 
   const aplicarPerdaDeVida = () => {
     let vidasAntes = 2;
-
     if (headerRef.current?.getLives) {
       const v = headerRef.current.getLives();
-      if (!isNaN(v)) vidasAntes = v;
+      if (typeof v === 'number') {
+        vidasAntes = v;
+      }
     }
 
     if (headerRef.current?.loseLife) {
@@ -187,7 +199,11 @@ function AtivNotas() {
       xpRef.current += 2;
     } else {
       errosRef.current += 1;
-      if (aplicarPerdaDeVida()) return;
+
+      const gameOver = aplicarPerdaDeVida();
+      if (gameOver) {
+        return;
+      }
     }
 
     setFeedbackInfo({
@@ -201,7 +217,10 @@ function AtivNotas() {
   const handleCloseFeedback = () => {
     setFeedbackVisible(false);
 
-    if (currentIndex + 1 < allAtividades.length) {
+    const proximaQuestaoIndex = currentIndex + 1;
+    const temProximaQuestao = proximaQuestaoIndex < allAtividades.length;
+
+    if (temProximaQuestao) {
       setCurrentIndex((prev) => prev + 1);
       setRespostaSelecionada(null);
     } else {
@@ -212,9 +231,15 @@ function AtivNotas() {
   const handleSkip = () => {
     errosRef.current += 1;
 
-    if (aplicarPerdaDeVida()) return;
+    const gameOver = aplicarPerdaDeVida();
+    if (gameOver) {
+      return;
+    }
 
-    if (currentIndex + 1 < allAtividades.length) {
+    const proximaQuestaoIndex = currentIndex + 1;
+    const temProximaQuestao = proximaQuestaoIndex < allAtividades.length;
+
+    if (temProximaQuestao) {
       setCurrentIndex((prev) => prev + 1);
       setRespostaSelecionada(null);
     } else {
@@ -290,6 +315,11 @@ function AtivNotas() {
     setCurrentIndex(0);
   };
 
+  const handleFecharResumo = () => {
+    setResumoVisible(false);
+    navegarParaHomeComResultado();
+  };
+
   const handleLifeModalConfirm = () => {
     setLifeModalVisible(false);
 
@@ -297,28 +327,50 @@ function AtivNotas() {
     errosRef.current = 0;
     xpRef.current = 0;
 
-    if (headerRef.current?.resetLives) {
-      headerRef.current.resetLives();
-    }
-
-    setCurrentIndex(0);
     setResumoVisible(false);
     setFeedbackVisible(false);
     setRespostaSelecionada(null);
+    setCurrentIndex(0);
+
+    if (headerRef.current?.resetLives) {
+      headerRef.current.resetLives();
+    }
+  };
+
+  const handleLifeModalExit = () => {
+    setLifeModalVisible(false);
+
+    const resumoParcial = calcularResumo();
+
+    const resultado = {
+      ...resumoParcial,
+      aprovado: false,
+      xpGanho: 0,
+      bonusVida: false,
+    };
+
+    navigation.navigate('Tab', {
+      screen: 'Home',
+      params: {
+        resultadoAtividade: resultado,
+      },
+    });
   };
 
   const handleCloseActivity = () => {
     const resumoParcial = calcularResumo();
 
+    const resultado = {
+      ...resumoParcial,
+      aprovado: false,
+      xpGanho: 0,
+      bonusVida: false,
+    };
+
     navigation.navigate('Tab', {
       screen: 'Home',
       params: {
-        resultadoAtividade: {
-          ...resumoParcial,
-          aprovado: false,
-          xpGanho: 0,
-          bonusVida: false,
-        },
+        resultadoAtividade: resultado,
       },
     });
   };
@@ -360,14 +412,15 @@ function AtivNotas() {
       <ResumoAtividadeModal
         visible={resumoVisible}
         resumoDados={resumoDados}
-        onClose={navegarParaHomeComResultado}
+        onClose={handleFecharResumo}
         onRecomecar={handleRecomecar}
-        onContinuar={navegarParaHomeComResultado}
+        onContinuar={handleFecharResumo}
       />
 
       <LifeLostModal
         visible={lifeModalVisible}
         onConfirm={handleLifeModalConfirm}
+        onExit={handleLifeModalExit}
       />
     </AtivContainer>
   );

@@ -8,7 +8,7 @@ export const SkipView = styled.TouchableOpacity`
     border-radius: 12px;
     border-color: #D2D3D5;
     background-color: #FFFFFF;
-    border-width: 1px;
+    border-width: 2px;
     border-bottom-width: 4px;
 `;
 

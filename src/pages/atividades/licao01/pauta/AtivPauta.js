@@ -313,6 +313,25 @@ function AtivPauta() {
     setRespostaSelecionada(null);
   };
 
+  const handleLifeModalExit = () => {
+    setLifeModalVisible(false);
+
+    const resumoParcial = calcularResumo({ concluida: false });
+
+    navigation.navigate('Tab', {
+      screen: 'Home',
+      params: {
+        resultadoAtividade: {
+          ...resumoParcial,
+          aprovado: false,
+          xpGanho: 0,
+          bonusVida: false,
+          atividadeId: 'L1-PAUTA',
+        },
+      },
+    });
+  };
+
   const handleCloseActivity = () => {
     const resumoParcial = calcularResumo({ concluida: false });
 
@@ -375,6 +394,7 @@ function AtivPauta() {
       <LifeLostModal
         visible={lifeModalVisible}
         onConfirm={handleLifeModalConfirm}
+        onExit={handleLifeModalExit}
       />
     </AtivContainer>
   );
