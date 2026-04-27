@@ -123,3 +123,17 @@ https://github.com/werbertviana
 
 # ⭐ Contribuição
 Este projeto está em desenvolvimento e novas funcionalidades serão ser adicionadas futuramente.
+
+---
+
+# 📜 Licença
+
+Batuta é um software proprietário criado por Werbert Viana.
+
+Este repositório está público apenas para fins de portfólio, visualização educacional e avaliação profissional.
+
+O código pode ser visualizado, mas não pode ser copiado, modificado, redistribuído, publicado, comercializado ou utilizado para criação de obras derivadas sem autorização prévia por escrito.
+
+Os direitos comerciais permanecem exclusivamente com o autor.
+
+Consulte o arquivo [LICENSE.md](LICENSE.md) para os termos completos.
